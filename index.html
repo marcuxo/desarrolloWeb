@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<!-- import .css bootstrap -->
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-4 bg-inverse">
+				<h1 class="display-4 text-white">Banco Think</h1>
+			</div>
+			<div class="col-1 bg-inverse text-right hidden-sm-down">
+				<img src="img/LOGO_INV.png" alt="" height="80">
+			</div>
+		</div>
+	</div>
+</header>
+
+<section>
+	<div class="container bg-faded">
+		<div class="row">
+			<div class="col-6 text-center p-5" id="lacapa">
+				<!-- <script>
+					imagenes = ['./img/login_1.png', './img/login_2.png', './img/login_3.png'];
+					document.write('<img src="' + imagenes[Math.floor(Math.random() * imagenes.length)] + '" alt="Imagen aleatoria" height="250"/>');
+				</script> -->
+				<!-- <img src="./img/login_1.png" alt="" height="250"> -->
+			</div>
+			<div class="col-6 text-center p-5">
+				<h1 class="displlay-1">Acceso a Banca Movil</h1>
+				<!-- Formulario de login -->
+				<form action="./phpprocesos/seciones.php" method="post"> 
+					<input type="email" required placeholder=" Usuario@correo.com" name="user"><br><br>
+					<input type="password" placeholder=" Contrasena ****" required name="pass"><br><br>
+					<br>
+						<fieldset class="form-group">
+					    <div class="form-check">
+					      <label class="form-check-label">
+					        <input type="radio" class="form-check-input" name="tipo" id="optionsRadios1" value="cliente" checked>
+					        Cliente
+					      </label>
+					    <!-- </div> -->
+					    <!-- <div class="form-check"> -->
+					    <label class="form-check-label">
+					        <input type="radio" class="form-check-input" name="tipo" id="optionsRadios2" value="asesor">
+					        Asesor
+					      </label>
+					    <!-- </div> -->
+					    <!-- <div class="form-check"> -->
+					    <label class="form-check-label">
+					        <input type="radio" class="form-check-input" name="tipo" id="optionsRadios3" value="gerente">
+					        Gerente
+					      </label>
+					    </div>
+					  </fieldset>
+					<br><br>
+					<a href="recuperacionContrasena.html">Olvide mi contrasena</a><br>
+
+					<!-- <input type="submit" class="btn btn-outline-primary btn-sm" name="entrar" id="efwer"> </input> -->
+					<button type="submit" class="btn btn-outline-primary btn-sm px-4">Ingresar a banca movil</button>
+					<br>
+					<br>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- <br><br><br><br><br><br><br>
+
+<a href="plantilla.html">Plantilla</a><br>
+<a href="ingresoCliente.php">ingreso Clientes</a><br>
+<a href="ingresoAgente.php">Ingreso Agentes</a><br>
+<a href="consola_activacion_agente_cuentas.php">Consola Activacion Agentes de Cuentas</a><br>
+<a href="vistaUsuario.php">Vista usuarios</a><br>
+<a href="vistaGerente.php">Vista Gerente</a><br> -->
+<!-- pie de pagina -->
+<footer>
+	<div class="container bg-inverse">
+		<div class="col-12 text-center">
+			<small class="text-white font-italic">Creado por Marco//Jeremy//Gaston //\ grupo NULL</small>
+		</div>
+	</div>
+</footer>
+
+<!-- import fontOwesome js -->
+ 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<!-- import de .js jquery, tether, bootstrap -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/bootstrap4.min.js"></script>
+</body>
+</html>
+<!-- <script>
+	imagenes = ['./img/login_1.png', './img/login_2.png', './img/login_3.png'];
+	document.write('<img src="' + imagenes[Math.floor(Math.random() * imagenes.length)] + '" alt="Imagen aleatoria" />');
+</script> -->
+
+<script type="application/javascript">
+imagenes = ['./img/login_1.png', './img/login_2.png', './img/login_3.png', './img/login_4.png', './img/login_5.png', './img/login_6.jpg'];
+document.getElementById('lacapa').innerHTML='<img src="' + imagenes[Math.floor(Math.random() * imagenes.length)] + '" alt="Imagen aleatoria" height="250"/>';
+</script>
